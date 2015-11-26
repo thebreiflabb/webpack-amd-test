@@ -3,9 +3,11 @@
   "version": "1.0.1",
   "description": "Test",
   "scripts": {
+  	"prebuild": "rimraf ./dist",
     "build": "webpack --config ./webpack-config.js"
   },
   "devDependencies": {
+    "rimraf": "~2.4.4",
     "webpack": "~1.12.9"
   }
 }

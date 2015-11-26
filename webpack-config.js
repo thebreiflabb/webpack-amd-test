@@ -7,7 +7,7 @@
 	output: {
 		filename: '[name].bundle.js',
 		path: './dist',
-		publicPath: '/pub',
+		publicPath: 'dist/',
 		libraryTarget: 'amd'
 	},
 	externals: {
@@ -19,7 +19,5 @@
 		root: './src'
 	}
 };
-
-console.log(config);
 
 module.exports = config;
