@@ -1,6 +1,8 @@
-﻿define(['underscore', 'modules/other1'], function(_, other1) {
+﻿define(['underscore', 'modules/other'], function(_, other) {
+	console.log('main1 loaded');
+	console.log('other from main1 loaded');
+
 	return function() {
-		console.log('in main1 module');
-		alert(other1());
+		alert('main1 loaded, result from other: ' + other());
 	}
 });

@@ -1,9 +1,10 @@
 ﻿define(['underscore'], function(_) {
+	console.log('main2 loaded');
+
 	return function() {
-		console.log('in main2 module');
-		
-		require(['modules/other2'], function(other2) {
-			alert(other2());
+		require(['modules/other2'], function(other) {
+			console.log('other from main2 loaded');
+			alert('main2 loaded, result from other: ' + other());
 		});
 	}
 });
