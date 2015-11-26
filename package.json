@@ -1,0 +1,11 @@
+{
+  "name": "webpack-amd",
+  "version": "1.0.1",
+  "description": "Test",
+  "scripts": {
+    "build": "webpack --config ./webpack-config.js"
+  },
+  "devDependencies": {
+    "webpack": "~1.12.9"
+  }
+}
