@@ -1,0 +1,29 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title>Webpack test</title>
+	</head>
+	<body>
+		<script>
+			var require = {
+				baseUrl: '',
+				paths: {
+					'jquery': 'vendor/jquery-1.11.3',
+					'backbone': 'vendor/backbone-1.2.3',
+					'underscore': 'vendor/underscore-1.8.3'
+				}
+			};
+		</script>
+		<script src="vendor/requirejs-2.1.22.js"></script>
+
+		<script>
+			require(['dist/main1.bundle'], function(main1) {
+				main1();
+			});
+
+			require(['dist/main2.bundle'], function(main2) {
+				main2();
+			});
+		</script>
+	</body>
+</html>
